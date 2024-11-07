@@ -177,74 +177,59 @@ nav ul li a:hover {
     }
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center; /* Center the footer content horizontally */
-    align-items: center; /* Center the footer content vertically */
-    gap: 2rem;
-    text-align: center; /* Align text in each section */
-    margin-top: auto; /* Ensures footer stays at the bottom of the page */
-    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-}
-
-/* Footer styling */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: space-evenly; /* Evenly space sections horizontally */
-    align-items: center; /* Center the footer content vertically */
-    gap: 2rem;
-    text-align: center; /* Center text inside each section */
-    margin-top: auto; /* Ensures footer stays at the bottom of the page */
-    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-}
-
-/* Footer sections */
-.footer-section {
-    flex: 1;
-    padding: 0 1rem;
-    text-align: center; /* Center the text within each section */
-}
-
-/* Footer Logo styling */
-.footer-logo img {
-    width: 100%;
-    max-width: 200px; /* Adjust this based on your logo's size */
-    height: auto;
-}
-
-/* Footer Address styling */
-.footer-address p {
-    margin: 0.5rem 0;
-    color: #ccc;
-}
-
-/* Copyright section styling */
-.footer-copyright {
-    color: #777;
-    font-size: 0.9rem;
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    padding: 2rem 5%;
     text-align: center;
-    margin-top: 1rem;
-    width: 100%; /* Ensures copyright text takes full width */
 }
 
-/* Adjust footer for smaller screens */
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-section {
+    text-align: center;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    color: #FFD700; /* Gold color for headings */
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo-image {
+    width: 80px;
+    margin: 1rem 0;
+}
+
+.footer-address a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+.footer-address a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Footer Layout */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .footer-section {
-        text-align: center;
-        width: 100%; /* Ensures sections take full width on small screens */
-        margin-bottom: 1rem; /* Adds space between sections */
+        text-align: left;
     }
 }
 
