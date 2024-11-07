@@ -343,54 +343,59 @@ button:hover {
 /* Box Section Styling */
 .box-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes the boxes responsive */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 3rem 1rem;
+    padding: 3rem 5%;
+    max-width: 1200px; /* Limit the maximum width of the grid */
+    margin: 0 auto; /* Center the grid on the page */
     background-color: #f4f7fa;
 }
-
+.second {
+    background-color:;
+}
+/* Individual Box Styling */
 .box {
     background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 2rem;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
+    padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
 }
 
 .box h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
 .box p {
-    color: #555;
+    color: #666;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
+/* Hover Effects */
 .box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #f3f1ea;
-    color: #0a0a0a;
-}
-
-.box:hover h3 {
-    color: #070707;
-}
-
-.box:hover p {
-    color: #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    border-color: #5BC3EB; /* Optional: adds a highlight border color */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .box-section {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust column size for smaller screens */
+        padding: 2rem;
+    }
+    
+    .box {
+        padding: 1.5rem;
     }
 }
+
+
+
 
 .hero-services {
     background-image: url('servicespage.webp'); /* Replace with your image URL */
@@ -601,5 +606,51 @@ h2 {
 .owner-info {
     max-width: 600px;
 }
+
+/* Full-Width Image Section */
+.full-width-image {
+    width: 100%;
+    overflow: hidden; /* Ensures no overflow issues */
+}
+
+.full-width-image img {
+    width: 100%; /* Makes image stretch to full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    object-fit: cover; /* Ensures image covers the section without distortion */
+}
+/* Modern Styled Paragraph Section */
+.info-section {
+    background-color: #243740; /* Light background for contrast */
+    padding: 4rem 5%;
+    text-align: center;
+    color: #ffffff; /* Dark gray text for readability */
+}
+
+.info-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Dark color for emphasis */
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Softer gray for paragraph text */
+}
+
+.info-section p:first-of-type {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ffffff; /* Emphasized text for subtitle */
+}
+ 
 
  
