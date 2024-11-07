@@ -1,0 +1,620 @@
+ /* Basic CSS reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make body take up at least full height of viewport */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Mobile menu styling */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.mobile-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('gavel.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #e6b800;
+}
+
+/* Overlay for hero */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.open {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center; /* Center the footer content horizontally */
+    align-items: center; /* Center the footer content vertically */
+    gap: 2rem;
+    text-align: center; /* Align text in each section */
+    margin-top: auto; /* Ensures footer stays at the bottom of the page */
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-evenly; /* Evenly space sections horizontally */
+    align-items: center; /* Center the footer content vertically */
+    gap: 2rem;
+    text-align: center; /* Center text inside each section */
+    margin-top: auto; /* Ensures footer stays at the bottom of the page */
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+/* Footer sections */
+.footer-section {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: center; /* Center the text within each section */
+}
+
+/* Footer Logo styling */
+.footer-logo img {
+    width: 100%;
+    max-width: 200px; /* Adjust this based on your logo's size */
+    height: auto;
+}
+
+/* Footer Address styling */
+.footer-address p {
+    margin: 0.5rem 0;
+    color: #ccc;
+}
+
+/* Copyright section styling */
+.footer-copyright {
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%; /* Ensures copyright text takes full width */
+}
+
+/* Adjust footer for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%; /* Ensures sections take full width on small screens */
+        margin-bottom: 1rem; /* Adds space between sections */
+    }
+}
+
+
+/* Logo and Title aligned to the left */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-container img {
+    height: 100px;
+ }
+.logo {
+    height: 100px;
+ 
+}
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.textarea-container {
+    position: relative;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Box Section Styling */
+.box-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes the boxes responsive */
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f4f7fa;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f3f1ea;
+    color: #0a0a0a;
+}
+
+.box:hover h3 {
+    color: #070707;
+}
+
+.box:hover p {
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-section {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust column size for smaller screens */
+    }
+}
+
+.hero-services {
+    background-image: url('servicespage.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.hero-about {
+    background-image: url('aboutimag.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.hero-contact {
+    background-image: url('contactimg.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.contact-form {
+    background-color: white;
+    padding: 2em;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1em;
+  }
+  
+  .contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #9f7a48;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  .contact-info {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  .contact-info .contact-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .contact-info h2, .contact-info h3 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .contact-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .map-column {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  
+  .map-container iframe {
+    background-color: #9f7a48;  /* Add any color you prefer */
+    padding: 20px;              /* Optional padding */
+
+    border-radius: 15px; /* Rounded corners for the map */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow around the map */
+  }
+
+  
+  
+
+
+.hero-sectiona {
+    background: url('about2.webp') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-overlaya {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.about-section,
+.affiliations-section,
+.practice-areas {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #004080;
+    text-align: center;
+}
+
+.owner-info, .affiliations-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.affiliations-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.affiliations-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.affiliations-list li:last-child {
+    border-bottom: none;
+}
+
+.owner-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.headshot {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #004080;
+}
+
+.owner-info {
+    max-width: 600px;
+}
+
+ 
