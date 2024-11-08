@@ -1,71 +1,71 @@
 /* General Section Styles */
 section {
-    padding: 50px 15px;
+    padding: 60px 20px;
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    position: relative;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 36px;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
-    line-height: 1.4;
 }
 
+/* Section Styles */
 .legal-representation-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgImage.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bgImage.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 80px 15px;
+    padding: 80px 20px;
 }
 
 .legal-representation-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 25px;
 }
 
 .mission-statement-section {
     background-color: #f1f1f1;
-    padding: 70px 15px;
+    padding: 60px 20px;
 }
 
 .mission-statement-content {
     max-width: 1000px;
     margin: 0 auto;
+    background: #fff;
     padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 
-/* Mobile Adjustments */
+/* Mobile & Small Screens */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 1.6rem;
+    h2 { font-size: 28px; }
+
+    .legal-representation-section,
+    .mission-statement-section {
+        padding: 50px 15px;
     }
-    .legal-representation-section, .mission-statement-section {
-        padding: 50px 10px;
-    }
-    .legal-representation-content, .mission-statement-content {
+
+    .legal-representation-content,
+    .mission-statement-content {
         padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    h2 {
-        font-size: 1.4rem;
+    h2 { font-size: 24px; }
+
+    .legal-representation-section,
+    .mission-statement-section {
+        padding: 40px 15px;
     }
-    .legal-representation-content p, .mission-statement-content p {
-        font-size: 1rem;
-    }
-    .legal-representation-section, .mission-statement-section {
-        padding: 40px 10px;
+
+    .legal-representation-content p,
+    .mission-statement-content p {
+        font-size: 14px;
     }
 }
-
