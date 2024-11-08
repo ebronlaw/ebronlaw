@@ -27,6 +27,25 @@ body, html {
       height: auto;
     }
   }
+.contact-btn {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-btn:hover {
+  background-color: #333; /* Dark background on hover */
+}
+
+.contact-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
 /* Header styling */
 header {
     display: flex;
