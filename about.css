@@ -69,3 +69,28 @@ h2 {
         font-size: 14px;
     }
 }
+/* General styles for the body to prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure section padding fits within viewport */
+section, .legal-representation-content, .mission-statement-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+    .legal-representation-section, .mission-statement-section {
+        padding: 50px 15px;
+    }
+}
