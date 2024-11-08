@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Make body take up at least full height of viewport */
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styling */
@@ -246,6 +248,9 @@ footer {
 .logo {
     height: 100px;
  
+}
+.site-title{
+    color:#c5a45a;
 }
 .form-container {
     background: #fff;
@@ -551,7 +556,7 @@ button:hover {
 .about-section,
 .affiliations-section,
 .practice-areas {
-    padding: 40px 20px;
+    padding: 80px 20px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -563,7 +568,7 @@ h2 {
     text-align: center;
 }
 
-.owner-info, .affiliations-list {
+/*.owner-info, .affiliations-list {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -582,7 +587,7 @@ h2 {
 
 .affiliations-list li:last-child {
     border-bottom: none;
-}
+}*/
 
 .owner-container {
     display: flex;
@@ -651,6 +656,443 @@ h2 {
     font-size: 1.3rem;
     color: #ffffff; /* Emphasized text for subtitle */
 }
- 
+.consulting-section {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
 
+.consulting-section h1 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.consulting-section h2 {
+    color: #005599;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.consulting-section p {
+    margin: 15px 0;
+}
+
+.consulting-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.consulting-section li {
+    margin: 8px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+.consulting-section li:before {
+    content: "•";
+    color: #005599;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.consulting-section {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+.consulting-section h1 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.consulting-section h2 {
+    color: #005599;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.consulting-section p {
+    margin: 15px 0;
+}
+.services {
+    padding: 2rem;
+    text-align: center;
+}
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    background: #f4f4f9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+}
+.hover-boxes {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+.hover-box {
+    background: #003366;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Default to full-width for mobile */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.hover-box h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+.hover-box p {
+    color: #ffffff;
+}
+/* Tablet and desktop styling */
+@media (min-width: 768px) {
+    .hover-box {
+        width: 48%; /* Two cards per row */
+    }
+}
+/* General Styles for the Owner Container */
+.owner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.headshot {
+    max-width: 150px;
+    border-radius: 50%;
+    height: auto;
+}
+
+.owner-info {
+    flex: 1;
+}
+
+.owner-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.owner-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .owner-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .headshot {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .owner-info h2 {
+        font-size: 22px;
+    }
+
+    .owner-info p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .owner-info h2 {
+        font-size: 20px;
+    }
+
+    .owner-info p {
+        font-size: 13px;
+    }
+}
+/* Project Section Styling */
+.project-section {
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust as needed */
+    padding-bottom: 20;
+
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.project-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+}
  
+/* Education Section */
+.education-section {
+    background-color: #f0f4f8; /* Light background for better contrast */
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust as needed */
+    margin-top: 0;
+
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Ensures 3 equal columns */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #f3f4f7; /* Light background for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Education items, including Bar Admission */
+.education-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers the text horizontally */
+    border: 2px solid #e0e0e0;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9); /* Soft gradient */
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.education-item p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.education-item.bar-admission {
+    grid-column: span 3; /* Makes Bar Admission span across all columns */
+    background-color: #2980b9; /* Blue background for emphasis */
+    color: #000000;
+}
+
+.education-item.bar-admission h3 {
+    color: #000000;
+}
+
+.education-item.bar-admission p {
+    color: #000000;
+}
+
+.education-item.bar-admission:hover {
+    background-color: #3498db;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr 1fr; /* For smaller screens, display two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-container {
+        grid-template-columns: 1fr; /* For very small screens, display one column */
+    }
+}
+/* General styling for the affiliations section */
+.affiliations-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+}
+
+/* Header styling */
+.affiliations-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Grid layout for the affiliations */
+.affiliations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Individual affiliation styling */
+.affiliation {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.affiliation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.affiliation-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Affiliation text styling */
+.affiliation p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+}
