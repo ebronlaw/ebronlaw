@@ -972,17 +972,18 @@ h2 {
 
 .education-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 10px; /* Ensure padding for mobile */
+
 }
 
 /* Education items, including Bar Admission */
 .education-item {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -993,6 +994,8 @@ h2 {
     text-align: center; /* Centers the text horizontally */
     border: 2px solid #e0e0e0;
     background: linear-gradient(145deg, #ffffff, #f9f9f9); /* Soft gradient */
+    font-size: 1rem; /* Adjust font size for readability */
+
 }
 
 .education-item:hover {
@@ -1045,6 +1048,25 @@ h2 {
         grid-template-columns: 1fr; /* For very small screens, display one column */
     }
 }
+/* Mobile-specific styles for education-section */
+@media (max-width: 768px) {
+    .education-section .box {
+      width: 100%;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+  }
+  @media (max-width: 768px) {
+    .education-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .education-container .box {
+      width: 90%; /* or 100% if you want full width */
+      margin-bottom: 15px;
+    }
+  }
 /* General styling for the affiliations section */
 .affiliations-section {
     padding: 60px 20px;
