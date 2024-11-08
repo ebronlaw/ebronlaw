@@ -1,145 +1,71 @@
 /* General Section Styles */
 section {
-    padding: 60px 20px;
+    padding: 50px 15px;
     text-align: center;
-    position: relative;
     margin: 0 auto;
     width: 100%;
+    position: relative;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.4;
 }
 
-/* First Section: Competent and Fair Legal Representation */
 .legal-representation-section {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgImage.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgImage.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 100px 20px;
-    background-size: cover;
+    padding: 80px 15px;
 }
 
 .legal-representation-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for contrast */
-    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.legal-representation-content p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.legal-representation-content h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: #c5a45a;
-}
-
-/* Second Section: Mission Statement */
 .mission-statement-section {
-    background-color: #f1f1f1; /* Slightly off-white to reduce starkness */
-    padding: 80px 20px;
+    background-color: #f1f1f1;
+    padding: 70px 15px;
 }
 
 .mission-statement-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 40px;
-    background-color: #fff; /* White background, but we reduce the white effect with padding */
-    border-radius: 12px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-.mission-statement-content p {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.mission-statement-content h2 {
-    font-size: 38px;
-    margin-bottom: 25px;
-    color: #333;
-    font-weight: 600;
-}
-
-/* Adding Background Texture to the Mission Statement Section */
-.mission-statement-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('subtle-texture.png') repeat; /* Optional: Add a soft background texture */
-    opacity: 0.1; /* Keeps the texture subtle */
-    z-index: -1;
-}
-
-/* Responsive Design for Smaller Screens */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
-    .legal-representation-section {
-        padding: 80px 15px;
-    }
-
-    .legal-representation-content {
-        padding: 25px;
-    }
-
-    .mission-statement-section {
-        padding: 60px 15px;
-    }
-
-    .mission-statement-content {
-        padding: 30px;
-    }
-
     h2 {
-        font-size: 28px;
+        font-size: 1.6rem;
     }
-
-    .legal-representation-content p,
-    .mission-statement-content p {
-        font-size: 16px;
+    .legal-representation-section, .mission-statement-section {
+        padding: 50px 10px;
+    }
+    .legal-representation-content, .mission-statement-content {
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .legal-representation-section {
-        padding: 60px 15px;
-    }
-
-    .legal-representation-content {
-        padding: 20px;
-    }
-
-    .mission-statement-section {
-        padding: 40px 15px;
-    }
-
-    .mission-statement-content {
-        padding: 25px;
-    }
-
     h2 {
-        font-size: 24px;
+        font-size: 1.4rem;
     }
-
-    .legal-representation-content p,
-    .mission-statement-content p {
-        font-size: 14px;
+    .legal-representation-content p, .mission-statement-content p {
+        font-size: 1rem;
+    }
+    .legal-representation-section, .mission-statement-section {
+        padding: 40px 10px;
     }
 }
-
 
