@@ -2,6 +2,7 @@
 section {
     padding: 60px 20px;
     text-align: center;
+    position: relative;
     margin: 0 auto;
     width: 100%;
 }
@@ -11,57 +12,128 @@ h2 {
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
+    line-height: 1.4;
 }
 
-/* Section Styles */
+/* First Section: Competent and Fair Legal Representation */
 .legal-representation-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bgImage.jpg') center/cover no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgImage.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    background-size: cover;
 }
 
 .legal-representation-content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for contrast */
     border-radius: 10px;
-    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.legal-representation-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.legal-representation-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #c5a45a;
+}
+
+/* Second Section: Mission Statement */
 .mission-statement-section {
-    background-color: #f1f1f1;
-    padding: 60px 20px;
+    background-color: #f1f1f1; /* Slightly off-white to reduce starkness */
+    padding: 80px 20px;
 }
 
 .mission-statement-content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: #fff;
-    padding: 30px;
+    padding: 40px;
+    background-color: #fff; /* White background, but we reduce the white effect with padding */
     border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile & Small Screens */
-@media (max-width: 768px) {
-    h2 { font-size: 28px; }
+.mission-statement-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
 
-    .legal-representation-section,
-    .mission-statement-section {
-        padding: 50px 15px;
+.mission-statement-content h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Adding Background Texture to the Mission Statement Section */
+.mission-statement-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('subtle-texture.png') repeat; /* Optional: Add a soft background texture */
+    opacity: 0.1; /* Keeps the texture subtle */
+    z-index: -1;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .legal-representation-section {
+        padding: 80px 15px;
     }
 
-    .legal-representation-content,
+    .legal-representation-content {
+        padding: 25px;
+    }
+
+    .mission-statement-section {
+        padding: 60px 15px;
+    }
+
     .mission-statement-content {
-        padding: 20px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .legal-representation-content p,
+    .mission-statement-content p {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    h2 { font-size: 24px; }
+    .legal-representation-section {
+        padding: 60px 15px;
+    }
 
-    .legal-representation-section,
+    .legal-representation-content {
+        padding: 20px;
+    }
+
     .mission-statement-section {
         padding: 40px 15px;
+    }
+
+    .mission-statement-content {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     .legal-representation-content p,
@@ -69,28 +141,8 @@ h2 {
         font-size: 14px;
     }
 }
-/* General styles for the body to prevent horizontal scrolling */
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Ensure section padding fits within viewport */
-section, .legal-representation-content, .mission-statement-content {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 60px 20px;
-    margin: 0 auto;
-}
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 28px;
-    }
-    .legal-representation-section, .mission-statement-section {
         padding: 50px 15px;
     }
 }
