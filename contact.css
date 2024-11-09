@@ -97,3 +97,25 @@
         padding: 1rem;
     }
 }
+/* Map Container Styling */
+.map-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Adjust as needed for mobile */
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 200px; /* Smaller height for mobile */
+    }
+}
