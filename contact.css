@@ -9,7 +9,9 @@
     gap: 30px;
     box-sizing: border-box;
 }
-
+.contact-content h2 {
+    color:#f4f6f8;
+}
 /* Individual Section Styling (Uniform Size for All Sections) */
 .contact-info,
 .map-container,
