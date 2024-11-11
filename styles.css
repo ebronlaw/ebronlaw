@@ -129,10 +129,10 @@ nav ul li a:hover {
 
 /* Hero section styling */
 .hero {
-    background-image: url('gavel.webp'); /* Replace with your image URL */
+    background-image: url('pexels-sora-shimazaki-5668473-min.webp'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -446,7 +446,7 @@ button:hover {
     text-align: center;
 }
 .hero-about {
-    background-image: url('aboutimag.webp'); /* Replace with your image URL */
+    background-image: url('aboutimage4.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     height: 60vh;
