@@ -1,33 +1,84 @@
-/* Contact Info Section */
-.contact-info {
-    padding: 40px;
+/* Main Contact Section Wrapper */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Center-aligns the content with a max width */
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/* Individual Section Styling (Uniform Size for All Sections) */
+.contact-info,
+.map-container,
+.contact-form {
+    width: 100%; /* Full width within the contact-section */
+    max-width: 800px; /* Same max width as contact-section */
+    min-height: 300px; /* Same height for consistency */
     background-color: #f4f6f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Contact Info Section Styling */
+.contact-info {
+    background-color: transparent;
+}
+
+.contact-bg-image {
+    background-image: url('city.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+}
+
+.contact-content {
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
 }
-.contact-page {
-    color:#ffffff
+
+/* Map Container Styling */
+.map-container {
+    background-color: #ffffff;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.contact-bg-image {
-    background-size: cover;
-    padding: 40px;
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Matches height of other sections */
     border-radius: 8px;
 }
 
-/* Contact Form Section */
-.contact-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
+/* Contact Form Styling */
+.contact-form {
     background-color: #ffffff;
-}
-
-.contact-form,
-.map-column {
-    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form h2 {
@@ -37,6 +88,7 @@
 
 .form-group {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .contact-form input,
@@ -59,62 +111,16 @@
 }
 
 .contact-form button:hover {
-    background-color: #C5A45A;
-}
-/* Contact Form Styling */
-.contact-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #1f2b37;
 }
 
-/* Input and Textarea Styles */
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-/* Responsive Form Adjustments */
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 1.5rem;
-    }
-
-    /* Address and location container adjustments */
-    .contact-section, .map-column {
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .contact-section {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
+        gap: 20px;
+        padding: 40px 20px;
     }
-}
-/* Map Container Styling */
-.map-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px; /* Adjust as needed for mobile */
-    border: none;
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
     .map-container iframe {
         height: 200px; /* Smaller height for mobile */
     }
