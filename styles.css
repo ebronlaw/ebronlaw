@@ -461,11 +461,12 @@ button:hover {
     background-image: url('contactimg.webp'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 80vh; /* Full viewport height */
+    min-height: 500px; /* Minimum height to ensure visibility on smaller screens */
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     color: #fff;
     text-align: center;
 }
