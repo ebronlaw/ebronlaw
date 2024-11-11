@@ -652,7 +652,7 @@ h2 {
 
 .full-width-image img {
     width: 100%; /* Makes image stretch to full width */
-    height: auto; /* Maintains aspect ratio */
+    height: 80vh; /* Maintains aspect ratio */
     display: block;
     object-fit: cover; /* Ensures image covers the section without distortion */
 }
