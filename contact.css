@@ -103,14 +103,14 @@ button:hover {
 
 .video-container {
     position: relative;
-    padding-bottom: 28.125%; /* 16:9 aspect ratio divided by 2 (56.25% / 2) */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.video-container iframe {
+.video-container video {
     position: absolute;
     top: 0;
     left: 0;
