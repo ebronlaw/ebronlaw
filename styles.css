@@ -1171,3 +1171,21 @@ h2 {
     font-size: 14px;
     color: #aaa;
 }
+/* Remove bullets from quick links */
+.quick-links {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
