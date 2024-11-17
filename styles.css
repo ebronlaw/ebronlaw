@@ -1154,4 +1154,20 @@ h2 {
     color: #555;
     margin: 0;
 }
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
 
+.quick-links a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0; /* Adjust space within the footer */
+    font-size: 14px;
+    color: #aaa;
+}
